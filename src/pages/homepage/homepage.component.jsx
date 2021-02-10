@@ -53,7 +53,7 @@ class HomePage extends React.Component {
           {this.state.sections.map((item) => {
             const { title, imageUrl, linkUrl } = item;
             return (
-              <div className="col-sm-12 col-md-6 col-lg-4 ">
+              <div className="col-sm-12 col-md-6 col-lg-4">
                 <a className="menu-item " href={`${linkUrl}`}>
                   <div
                     className="background-image"

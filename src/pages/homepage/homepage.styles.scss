@@ -11,9 +11,9 @@
   align-items: center;
   justify-content: center;
   border: 1px solid black;
-  margin: 0 7.5px 15px;
   overflow: hidden;
   height: 380px;
+  margin-bottom: 24px;
 
   &:hover {
     cursor: pointer;
@@ -26,14 +26,6 @@
     & .content {
       opacity: 0.9;
     }
-  }
-
-  &:first-child {
-    margin-right: 7.5px;
-  }
-
-  &:last-child {
-    margin-left: 7.5px;
   }
 
   .background-image {
