@@ -9,38 +9,27 @@ class HomePage extends React.Component {
       sections: [
         {
           title: "hats",
-          imageUrl: "/images/hats.png",
-          size: "large",
-          id: 1,
           linkUrl: "hats",
         },
         {
           title: "jackets",
-          imageUrl: "/images/jackets.png",
-          size: "large",
-          id: 2,
           linkUrl: "jackets",
         },
         {
           title: "sneakers",
-          imageUrl: "/images/sneakers.png",
-          size: "large",
-          id: 3,
           linkUrl: "sneakers",
         },
         {
           title: "womens",
-          imageUrl: "/images/womens.png",
-          size: "large",
-          id: 4,
           linkUrl: "womens",
         },
         {
           title: "mens",
-          imageUrl: "/images/men.png",
-          size: "large",
-          id: 5,
           linkUrl: "mens",
+        },
+        {
+          title: "kids",
+          linkUrl: "kids",
         },
       ],
     };
@@ -50,17 +39,16 @@ class HomePage extends React.Component {
     return (
       <section className="container home-page">
         <div className="row">
-          {this.state.sections.map((item) => {
-            const { title, imageUrl, linkUrl } = item;
+          {this.state.sections.map((item, idx) => {
+            const { title, linkUrl } = item;
             return (
-              <div className="col-sm-12 col-md-6 col-lg-4">
+              <div key={idx} className="col-sm-12 col-md-6 col-lg-4">
                 <a className="menu-item " href={`${linkUrl}`}>
-                  <div
+                  <img
                     className="background-image"
-                    style={{
-                      backgroundImage: `url(${imageUrl})`,
-                    }}
+                    src="https://dummyimage.com/400x400/333333/333.jpg"
                   />
+
                   <div className="content">
                     <h1 className="title">{title.toUpperCase()}</h1>
                     <span className="subtitle">SHOP NOW</span>

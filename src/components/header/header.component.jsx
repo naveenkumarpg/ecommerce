@@ -12,10 +12,6 @@ const Header = ({ userStatus }) => (
       <Logo className="logo" />
     </Link>
     <div className="options">
-      <Link className="option" to="/shop">
-        Shop
-      </Link>
-
       {userStatus ? (
         <a href="#" onClick={() => auth.signOut()}>
           Logout

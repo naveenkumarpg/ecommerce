@@ -22,3 +22,13 @@ a {
   text-decoration: none;
   color: black;
 }
+
+a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.btn-block {
+  width: 100%;
+  margin-bottom: 24px;
+}
